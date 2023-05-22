@@ -4,7 +4,7 @@
 	"name": "author-info/authorinfo",
 	"version": "0.1.0",
 	"title": "Author Info",
-	"category": "widgets",
+	"category": "creedally",
 	"icon": "businessperson",
 	"description": "Author Info dynamic block",
 	"supports": {
