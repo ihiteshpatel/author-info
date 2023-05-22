@@ -1,0 +1,43 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "author-info/authorinfo",
+	"version": "0.1.0",
+	"title": "Author Info",
+	"category": "widgets",
+	"icon": "businessperson",
+	"description": "Author Info dynamic block",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "authorinfo",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"attributes": {
+		"displayAuthorInfo": {
+			"type": "boolean",
+			"default": true
+		},
+		"showAvatar": {
+			"type": "boolean",
+			"default": true
+		}, 
+		"avatarSize": {
+			"type": "number",
+			"default": 48
+		},
+		"showUsername": {
+			"type": "boolean",
+			"default": true
+		},
+		"showEmail": {
+			"type": "boolean",
+			"default": true
+		},
+		"showDescription": {
+			"type": "boolean",
+			"default": true
+		}
+	}
+}
