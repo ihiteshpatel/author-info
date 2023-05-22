@@ -51,3 +51,14 @@ function author_info_plugin_init() {
     ) );
 }
 add_action( 'init', 'author_info_plugin_init' );
+
+add_filter( 'block_categories_all' , function( $categories ) {
+
+	// Adding a new category.
+	$categories[] = array(
+		'slug'  => 'creedally',
+		'title' => 'CreedAlly'
+	);
+  
+	return $categories;
+} );
