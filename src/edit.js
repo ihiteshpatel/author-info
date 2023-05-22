@@ -63,7 +63,7 @@ export default function Edit( { attributes, setAttributes } ) {
 						<>
 							<PanelRow>
 								<ToggleControl
-									label={ __( 'Show avatar' ) }
+									label={ __( 'Show avatar', 'authorinfo' ) }
 									checked={ showAvatar }
 									onChange={ () =>
 										setAttributes( { showAvatar: ! showAvatar } )
@@ -71,7 +71,7 @@ export default function Edit( { attributes, setAttributes } ) {
 								/>
 								{ showAvatar && (
 									<SelectControl
-										label={ __( 'Avatar size' ) }
+										label={ __( 'Avatar size', 'authorinfo') }
 										value={ avatarSize }
 										options={ avatarSizes }
 										onChange={ ( size ) => {
